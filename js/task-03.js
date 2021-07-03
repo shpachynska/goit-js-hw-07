@@ -24,8 +24,7 @@ const createImages = images.map((image) => {
   return imageEl;
 });
 
-createImages.join(" ");
-listEl.insertAdjacentHTML("afterbegin", createImages);
+listEl.insertAdjacentHTML("afterbegin", createImages.join(""));
 
 //============= another option =====================
 // const createImages = (images) =>
